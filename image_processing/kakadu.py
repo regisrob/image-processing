@@ -27,7 +27,11 @@ LOSSLESS_OPTIONS = [
     "-rate", "-"]
 """:func:`~image_processing.kakadu.Kakadu.kdu_compress` command line options which make the compression lossless"""
 
-DEFAULT_LOSSLESS_COMPRESS_OPTIONS = DEFAULT_COMPRESS_OPTIONS + LOSSLESS_OPTIONS
+QUIET_OPTION = [
+    "-quiet"]
+""":func:`~image_processing.kakadu.Kakadu.kdu_compress` command line options which suppress informative messages from kakadu"""
+
+DEFAULT_LOSSLESS_COMPRESS_OPTIONS = DEFAULT_COMPRESS_OPTIONS + LOSSLESS_OPTIONS + QUIET_OPTION
 """Default lossless command line options for :func:`~image_processing.kakadu.Kakadu.kdu_compress`"""
 
 LOSSY_OPTIONS = ["-rate", '3']
