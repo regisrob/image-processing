@@ -6,10 +6,11 @@ from __future__ import division
 class ImageProcessingError(Exception):
     pass
 
-
 class KakaduError(ImageProcessingError):
     pass
 
+class OpenJpegError(ImageProcessingError):
+    pass
 
 class ValidationError(ImageProcessingError):
     pass
